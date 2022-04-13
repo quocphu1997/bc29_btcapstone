@@ -6,6 +6,7 @@
   padding: 0;
 }
 /* header */
+
 .nav_header {
   position: relative;
 }
@@ -15,6 +16,9 @@
   position: fixed;
   right: 0;
   left: 0;
+  z-index: 999;
+  height: 90px;
+  margin-bottom: 100px;
   box-shadow: 0px 0px 10px 0.5px rgba(211, 205, 205, 0.697);
 }
 .navbar .navbar-brand {
@@ -96,16 +100,79 @@ nav ul li i {
   transform: rotate(45deg);
 }
 /*  */
+/* background hearder */
+.background_header {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background-position: center;
+  background-image:linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../image/banner.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 660px;
+  display: grid;
+  padding-top: 5rem;
+  align-items: center;
+  overflow: hidden;
+}
+.row{
+  padding-top: 5rem;
+  
+}
+.left_content h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.left_content p{
+  font-size: 1.3rem;
+  color: rgb(86, 83, 83);
+}
+.left_content button{
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #dc4f72;
+  font-weight: 700;
+  background-color: transparent;
+  border: 0.5px solid #dc4f72;
+  transition: all 0.5s;
+}
+.left_content button:hover{
+  background-color: #dc4f72;
+  border: 1 solid transparent;
+  color: white;
+}
+.right_contentPic{
+  transform: rotate(180deg);
+}
+/*  */
+/* section choose us */
+.content_chooseUs{
+  text-align: center;
+}
+.content_chooseUs h3{
+  font-size: 1.025rem;
+  font-weight: 700;
+  color: #dc4f72;
+  line-height: 0.7;
+}
+.content_chooseUs h1{
+  font-size: 3rem;
+  font-weight: 700;
+
+}
+
 /* screen */
 @media (min-width: 1500px) {
   .container {
     max-width: 1220px;
   }
 }
-@media (min-width: 700px) {
-  .dropdown-menu{
+@media only screen and (min-width: 700px) {
+  .dropdown-menu {
     position: absolute;
     transform: translateY(500px);
   }
 }
+
 /* screen */
