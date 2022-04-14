@@ -106,28 +106,28 @@ nav ul li i {
   width: 100%;
   z-index: 1;
   background-position: center;
-  background-image:linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../image/banner.jpg);
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
+    url(../image/banner.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 660px;
+  height: 700px;
   display: grid;
   padding-top: 5rem;
   align-items: center;
   overflow: hidden;
 }
-.row{
+.row {
   padding-top: 5rem;
-  
 }
-.left_content h1{
+.left_content h1 {
   font-size: 3.5rem;
   font-weight: 700;
 }
-.left_content p{
+.left_content p {
   font-size: 1.3rem;
   color: rgb(86, 83, 83);
 }
-.left_content button{
+.left_content button {
   text-transform: uppercase;
   border-radius: 5px;
   font-size: 0.9rem;
@@ -137,35 +137,58 @@ nav ul li i {
   border: 0.5px solid #dc4f72;
   transition: all 0.5s;
 }
-.left_content button:hover{
+.left_content button:hover {
   background-color: #dc4f72;
   border: 1 solid transparent;
   color: white;
 }
-.right_contentPic{
+.right_contentPic {
   transform: rotate(180deg);
 }
 /*  */
 /* section choose us */
-.content_chooseUs{
+.content_chooseUs {
   text-align: center;
 }
-.content_chooseUs h3{
+.content_chooseUs h3 {
   font-size: 1.025rem;
   font-weight: 700;
   color: #dc4f72;
   line-height: 0.7;
 }
-.content_chooseUs h1{
+.content_chooseUs h1 {
   font-size: 3rem;
   font-weight: 700;
-
 }
-
+/* card img top */
+.card_row {
+  display: flex;
+  justify-content: center;
+}
+.img_card {
+  width: 70px;
+}
+.card-title {
+  font-weight: 700;
+}
+.card-text {
+  color: rgb(114, 114, 114);
+}
+.card_choose {
+  background-color: #f7f9fc;
+  padding: 1rem 0;
+  border: transparent;
+  transition: all 0.5s;
+}
+.card.card_choose:hover{
+  background-color: white;
+  box-shadow: 1px 1px 15px 2px #949697;
+  transform: translateY(-2px);
+}
 /* screen */
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   .container {
-    max-width: 1220px;
+    max-width: 1300px;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -174,5 +197,10 @@ nav ul li i {
     transform: translateY(500px);
   }
 }
+@media only screen and (min-width: 600px) {
+  .background_header {
 
+    height: max-content;
+  }
+}
 /* screen */
